@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner s = new Scanner(System.in);
+    System.out.println("Enter a num: ");
+    int num1 = s.nextInt();
+    if (num1%3==0&&num1%5==0)
+      System.out.println("Fizzbuzz");
+    
+    else if (num1%3==0&&num1%5!=0)
+      System.out.println("Fizz");
+    
+    else if (num1%5==0&&num1%3!=0)
+      System.out.println("Buzz");
+    else if (num1%3!=0&&num1%5!=0)
+      System.out.println("Your number "+num1+" cant be fizzbuzzed");
+  }//end main method
+
+}//end main class
