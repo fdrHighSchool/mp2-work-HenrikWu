@@ -1,0 +1,33 @@
+public static void main(String[] args) {
+    int num = 60; 
+    System.out.println(grade(num));
+    
+  }
+  public static String grade(int num){
+    String finalScore = "";
+    if (num>=90){
+      finalScore = "A";
+      
+    }
+    else if (num>=80&&num<90){
+      finalScore = "B";
+    }
+    else if (num>=70&&num<80){
+      finalScore = "C";
+    }
+    else if (num>=60&&num<70){
+      finalScore = "D";
+    } 
+    if (num%10<3){
+      finalScore = finalScore + "-";
+    }
+    if (num%10>6){
+      finalScore = finalScore + "+";
+    }
+    if (num<60){
+      finalScore = "F";
+    }
+    
+    return finalScore;
+  }
+}
